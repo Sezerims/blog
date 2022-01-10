@@ -1,7 +1,30 @@
-h1 {
-    color: red;
+body {
+    background-color: #eee;
+    min-height: 100vh;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-p {
-    color: blue;
+/* Navbar */
+
+.navbar-container {
+    background-color: #ddd;
+}
+
+.navbar-brand {
+    font-family: 'Croissant One', sans-serif;
+    font-size: 2rem;
+}
+
+/* Main Content */
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    font-weight: 200;
+}
+
+footer p {
+    margin: 1rem 0;
 }

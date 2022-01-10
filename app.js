@@ -2,11 +2,14 @@
 const express = require('express');
 const app = express();
 
-// Set up ejs
-app.set('view engine', 'ejs');
+// Set up urlencoded parser
+app.use(express.urlencoded({extended: true}));
 
 // Set up public folder
 app.use(express.static('public'));
+
+// Set up ejs
+app.set('view engine', 'ejs');
 
 app.get("/", function(req, res) {
     res.render('index');
