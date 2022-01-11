@@ -1,0 +1,23 @@
+<%- include('partials/header') -%>
+
+    <h1>Compose</h1>
+
+    <form class="d-grid" action="/" method="post">
+
+        <label for="compose-title" class="form-label mb-0">Title</label>
+        <input class="compose-title form-control" type="text" name="composeTitle" id="compose-title" autocomplete="off" required>
+
+        <label for="compose-text" class="form-label mb-0">Article</label>
+        <textarea class="compose-text form-control" name="composeText" id="compose-text" cols="30" rows="10" required></textarea>
+
+        <button class="btn btn-dark bg-dark" type="reset">
+            Scrap<i class="fas fa-trash ms-2"></i>
+        </button>
+
+        <button class="btn btn-dark bg-dark" type="submit">
+            Post<i class="fas fa-paper-plane ms-2"></i>
+        </button>
+
+    </form>
+
+<%- include('partials/footer') -%>

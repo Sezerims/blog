@@ -4,6 +4,36 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+p {
+    margin: 0;
+}
+
+/* Anchor Tags */
+
+p a {
+    color: red;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+p a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+h2 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+h2 a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.container-fluid {
+    padding: 0 2rem;
+}
+
 /* Navbar */
 
 .navbar-container {
@@ -17,6 +47,22 @@ body {
 
 /* Main Content */
 
+.main-content {
+    justify-self: flex-start;
+    flex-grow: 1;
+    padding: 1rem 0;
+}
+
+article {
+    padding: 1rem 0;
+}
+
+/* Read */
+
+.full-article {
+    white-space: pre-wrap; /* Keeps line breaks in */
+}
+
 /* Footer */
 
 footer {
@@ -27,4 +73,26 @@ footer {
 
 footer p {
     margin: 1rem 0;
+}
+
+/* Compose */
+
+form {
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 3fr;
+}
+
+.compose-title {
+    grid-column: 1/3;
+}
+
+.compose-text {
+    grid-column: 1/3;
+    resize: vertical;
+}
+
+.form-control:focus {
+    border: 1px solid #ced4da;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #ced4da;
 }
